@@ -1,8 +1,8 @@
 terraform {
   required_version = "~> 0.12.0"
   backend "s3" {
-    bucket = "jenkins-state-magical-polecat"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+    bucket = "ziyo-project-state-magical-polecat"
+    key    = "jenkins/terraform.tfstate"
+    region = "us-west-2"
   }
 }
