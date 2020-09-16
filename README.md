@@ -1,5 +1,3 @@
-# terraform-jenkins-pipeline
-
 # gitops-terraform-jenkins
 
 # Overview
@@ -11,28 +9,30 @@ The configuration in this repository was updated and now supports Terraform v0.1
 # NOTE
 
     Requirements
-Terraform installed on Jenkins
-Correct plugins installed on Jenkins
-GitHub access token
-AWS credentials
-S3 bucket
-Setup Bucket
-You will need to create a bucket and reference the bucket name in the following section of main.tf:
 
-terraform {
-  backend "s3" {
-    bucket = "XXXXXX"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+1. Terraform installed on Jenkins;
+2. Correct plugins installed on Jenkins
+3. GitHub access token
+4. AWS credentials
+5. S3 bucket
+6. Setup Bucket
+    You will need to create a bucket and reference the bucket name in the following section of main.tf:
+
+    terraform {
+        backend "s3" {
+            bucket = "XXXXXX"
+            key    = "terraform.tfstate"
+            region = "us-east-1"
   }
 }
+
 You can also update the key name to whatever you want your state file to be named.
 
 # Plugins Required
 
-Workspace Cleanup Plugin
-Credentials Binding Plugin
-AnsiColor Plugin
-GitHub Plugin
-Pipeline Plugin
-CloudBees AWS Credentials Plugin
+1. Workspace Cleanup Plugin;
+2. Credentials Binding Plugin;
+3. AnsiColor Plugin;
+4. GitHub Plugin;
+5. Pipeline Plugin;
+6. CloudBees AWS Credentials Plugin;
