@@ -18,6 +18,7 @@ The configuration in this repository was updated and now supports Terraform v0.1
 6. Setup Bucket
     You will need to create a bucket and reference the bucket name in the following section of main.tf:
 
+``` bash
     terraform {
         backend "s3" {
             bucket = "XXXXXX"
@@ -25,6 +26,7 @@ The configuration in this repository was updated and now supports Terraform v0.1
             region = "us-east-1"
   }
 }
+```
 
 You can also update the key name to whatever you want your state file to be named.
 
