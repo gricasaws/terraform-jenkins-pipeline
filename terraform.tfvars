@@ -1,0 +1,1 @@
+key_name = "first_launch"
