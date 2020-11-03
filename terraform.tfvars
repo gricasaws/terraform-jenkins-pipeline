@@ -1,2 +1,2 @@
-key_name = "my-key"
-aws_region   = "us-east-2"
+key_name = "jenkins"
+aws_region   = "us-east-1"
