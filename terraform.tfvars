@@ -1,2 +1,2 @@
 key_name = "my-key"
-region   = "us-east-2"
+aws_region   = "us-east-2"
