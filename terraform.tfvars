@@ -1,1 +1,1 @@
-key_name = "first_launch"
+key_name = "my-key"
