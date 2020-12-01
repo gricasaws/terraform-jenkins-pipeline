@@ -1,5 +1,6 @@
 variable "aws_region" {
   description = "The AWS region to create things in."
+  default     = "us-west-1"
 }
 
 # ubuntu-trusty-14.04 (x64)
@@ -17,6 +18,7 @@ variable "availability_zones" {
 
 variable "key_name" {
   description = "Name of AWS key pair"
+  default     = "kplabs-terraform"
 }
 
 variable "instance_type" {
